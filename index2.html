@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Lessons</title>
+  </head>
+  <body>
+    <header>
+      <h1>Intro</h1>
+      <p>Running a code will display your inputs on a web</p>
+      <p>Structure - in between tags are the elements</p>
+      <p>Nesting - used to nest elements that are in between <br>tags for better
+        code readability
+      </p>
+      <p><a href="#image-link">Imahe</a></p>
+      <p>This part is set as header, there more parts that uses<br> different
+        tags in a page. Such as main, nav, and footer.
+      </p>
+    </header>
+    <main>
+      <article>
+        <h2>Sizes of headings</h2>
+          <p>From heading 1 to the greater numbers the heading <br>size decreases,
+            as it have an indirect proportionality
+          </p>
+        <h2>Tags attributes</h2>
+          <p>Attributes have two parts, which is the name and <br>the value</p>
+          <p>
+            eg.
+            id - used in the initial tag to identify a specific tag
+          </p>
+        <h2>Using of span</h2>
+          <p>- these are usually used inside sentences to seperate <br>a phrae or
+            line.
+          </p>
+        <h2>Styling texts</h2>
+          <p>
+            eg.
+            strong - which <strong>bolderize</strong> the selected elements<br>
+            em - which <em>emphasizes/italicize</em> the selected elements
+          </p>
+        <h2>Line Breaks</h2>
+          <p>
+            line breaks are used to break a sentence to continue next line
+          </p>
+        <h2>How to do lists</h2>
+          <ul>
+            <li>Create a ul(unordered list) tags</li>
+            <li>then create list in between the ul tags</li>
+          </ul>
+          <ol>
+            <li>First is the ul tags</li>
+            <li>Then the li tags</li>
+            <li>You will see that this list are numbered</li>
+          </ol>
+      </article>
+      <section>
+        <h2 id="image-link">
+        Image
+      </h2>
+    <figure>
+      <a href="https://gundam.fandom.com/wiki/Mobile_Suit_Gundam_Wing"
+      target="_blank">
+        <img style="width: 30%" src="39347.jpg" alt="Gundam Wing-5-Gundams" />
+      </a>
+      <figcaption>
+        This is a caption for image that follows the image wherever,<br>
+         as long as it is wrapped in the figure
+      <figcaption>
+    </figure>
+    <aside>
+      The image above uses the element "figure", and inside the tags are elements
+      for image "img" and caption of the figure "figcaption"
+    </aside>
+    <audio controls>
+      <source
+      src="https://content.codecademy.com/courses/SemanticHTML/dogBarking.mp3"
+      type="audio/mp3">
+     </audio>
+     <aside>
+       This audio that is reused for demo, is available thru the use of "audio"
+       elements. Inside the audio tags, you have to put a "source" tag, then
+       insert the 'source' of your audio.
+     </aside>
+     <p>
+       These video and gif is used for demo, "video" tags are needed and an
+       attribute "src" to get the source and the attribute control, autoplay,
+       and loop in order to set how the video would play. For the gif, you need
+       the "embed" tags and include the attribute "src", note that embed element
+       is a self closing tag.
+     <p>
+     <video
+      src="https://content.codecademy.com/courses/SemanticHTML/dogg-video.mp4"
+      controls>
+       The video is unable to load
+     </video>
+      <embed
+   src="https://content.codecademy.com/courses/SemanticHTML/dog-on-beach.gif"/>
+        <img style="width: 30%" src="a39347.jpg" alt="Gundam Wing-5-Gundams" />
+        <h2>Video file</h2>
+      <video src="video_20240609_143812"></video>
+      <h2>Basic linking</h2>
+      <p>To make a link you need the tag a,
+        note that theres two ways of opening links
+      </p>
+      <ol>
+        <li>
+          FIrst, is when you click on the link the page loads on you current tab
+        </li>
+        <li>
+          The second one, is when you make a target for the page/link to load
+          on another tab.<br>
+        The target="_blank" attribute, when used in modern browsers, will open
+        new websites in a new tab.</li>
+        <!-- A relative path is a filename that shows the path to a local file
+        (a file on the same website, such as ./index.html)
+        versus an absolute path (a full URL,
+        like https://www.codecademy.com/learn/learn-html which is stored in a
+        different folder).
+        The ./ in ./index.html tells the browser to look for the file in the
+        current folder. -->
+      </ol>
+     </section>
+    </main>
+    <aside>
+      <p>This part is enclosed in an aside element it is used to mark<br>
+      additional information that can enhance another
+      element but<br> isn’t required in order to understand the main content.
+      This <br>element can be used alongside other elements such as article<br>
+      or section. Some common uses of the aside element are for:
+      </p>
+      <ul>
+        <li>Bibiliographies</li>
+        <li>Endnotes</li>
+        <li>Comments</li>
+        <li>Pull Quotes</li>
+        <li>Editorial Sidebars</li>
+        <li>Additional Information</li>
+      </ul>
+    </aside>
+    <table>
+      <tr>
+        <th scope="col">head 1</th>
+        <th scope="col">head 2</th>
+        <th scope="col"g>head 3</th>
+      </tr>
+        <td>1st cell</td>
+        <td>2nd cell</td>
+        <td>3rd cell</td>
+      <tr></tr>
+    </table>
+    <form>
+     <section>
+      <label for="UN">Name</label>
+      <input type="text" name:"username" value="name" id="UN"><br>
+      <label for="user-pw">Password:</label>
+    	<input type="password" name="user-pw" id="user-pw"><br>
+      <label for="amount">Put your age.</label>
+      <input type="number" step="1" name="amount" id="amount"><br>
+    </section>
+      <label for="doneness">How much do you enjoy doing stuff</label><br>
+      <span>Not really</span>
+      <input type="range" name="doneness" id="doneness" min="0" max="5"
+      step="0.5">
+      <span>Very</span><br>
+
+				  <label for="lettuce">Build Fighers</label>
+          <input id="lettuce" name="topping" type="checkbox" value="lettuce">
+
+          <label for="tomato">Iron-Blooded Orphans</label>
+          <input id="tomato" name="topping" type="checkbox" value="tomato">
+
+          <label for="pickles">Wing</label>
+          <input id="pickles" name="topping" type="checkbox" value="pickles">
+
+          <section class="cheesy">
+         <span>Do you like gundam?</span>
+         <br>
+
+         <input id="range" type="number" name="range" min="1" max="10">
+         <label for="range">By how much?</label>
+
+         <input id="yes" type="radio" name="cheese" value="yes">
+         <label for="yes">Yes</label>
+
+         <input id="no" type="radio" name="cheese" value="no">
+         <label for="no">No</label>
+
+         <section class="bun-type">
+  					<label for="bun">What type of Gundam do you prefer</label>
+  					<select name="bun" id="bun">
+              <option value="sesame">HG</option>
+              <option value="potato">RG</option>
+              <option value="egg-washed">MG</option>
+            </select>
+
+          </section>
+
+          <section class="sauce-selection">
+         <label for="sauce">What type of Gundam would you like? (Note: this is
+                            is a required field)
+         </label>
+         <input type="text" list="sauces" id="sauce" name="sauce" required>
+
+         <datalist id="sauces">
+           <option>High-grade</option>
+           <option>Real-grade</option>
+           <option>Master-Grade</option>
+         </datalist>
+
+       </section>
+       <section class="extra-info">
+         <label for="extra">Anything else you want to add?</label>
+         <br>
+         <textarea id="extra" name="extra" rows="3" cols="40">Type here:
+         </textarea>
+       <section>
+         <laber for="nickName">Put your preferred nickname:</label>
+         <input type="text" id="nickName" required minlength="4" maxlength="15"
+         pattern="[a-zA-Z0-9]+">
+       </section>
+
+       </section>
+
+        <section class="submission">
+          <input type="submit" value="Submit">
+        </section>
+
+    </form>
+  </body>
+</html>
